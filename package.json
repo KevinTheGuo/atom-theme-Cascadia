@@ -18,7 +18,7 @@
     "seattle",
     "washington"
   ],
-  "repository": "https://github.com/atom/cascadia-syntax",
+  "repository": "https://github.com/KevinTheGuo/cascadia-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
