@@ -1,28 +1,46 @@
 @import "syntax-variables";
 
-atom-text-editor {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+atom-text-editor
+{
+  background-color: @seaside;
+  color: @pacific-waters;
 
-  .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+  .line.cursor-line
+  {
+      background-color: @adams;
   }
 
-  .indent-guide {
-    color: @syntax-indent-guide-color;
+  .wrap-guide
+  {
+    background-color: @puget-shore;
   }
 
-  .invisible-character {
-    color: @syntax-invisible-character-color;
+  .indent-guide
+  {
+    color: @hood;
   }
 
-  .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
+  .invisible-character
+  {
+    color: @hood;
+  }
 
-    .line-number {
-      &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
+  .gutter-container
+  {
+  margin-right: 0.8em;        // add a small margin right to the gutter
+  }
+
+  .gutter
+  {
+    background-color: @puget-shore;
+    color: @haystack-rock;
+
+    .line-number
+    {
+      -webkit-font-smoothing: antialiased;
+      &.cursor-line
+      {
+        background-color: @sauvie-island;
         color: @syntax-gutter-text-color-selected;
       }
 
@@ -35,264 +53,303 @@ atom-text-editor {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @columbia;
   }
 
-  .invisible {
+/*  .invisible
+  {
     color: @syntax-text-color;
   }
 
-  .cursor {
+  .cursor
+  {
     color: @syntax-cursor-color;
-  }
+  }*/
 
   .selection .region {
-    background-color: @syntax-selection-color;
+    background-color: @cannon-beach;
   }
 }
 
+.bracket-matcher .region
+{
+  background-color: @bachelor;
+}
 
 // Syntax styles
-
-.syntax--comment {
-  color: @light-gray;
+.syntax--comment
+{
+  @rainier;
 }
 
-.syntax--keyword {
-  color: @purple;
-
-  &.syntax--control {
-    color: @purple;
+.syntax--entity
+{
+  &.syntax--name.syntax--type
+  {
+    color: @northern-pines;
   }
 
-  &.syntax--operator {
-    color: @syntax-text-color;
+  &.syntax--other.syntax--inherited-class
+  {
+    color: @cascadian-woods;
+  }
+}
+
+.syntax--keyword
+{
+  color: @cascadian-woods;
+
+  &.syntax--control
+  {
+    color: @pacific-waters;
   }
 
-  &.syntax--other.syntax--special-method {
-    color: @blue;
+  &.syntax--operator
+  {
+    color: @coastal-rainforests;
   }
 
-  &.syntax--other.syntax--unit {
-    color: @orange;
+  &.syntax--other.syntax--special-method
+  {
+    color: @cascade-creek;
+  }
+
+  &.syntax--other.syntax--unit
+  {
+    color: @pacific-waters;
+  }
+
+  &.syntax--other.syntax--unit
+  {
+      color: @northern-pines;
   }
 }
 
 .syntax--storage {
-  color: @purple;
+  color: @willamette;
+  &.syntax--todo, &.syntax--idea, &.syntax--fixme, &.syntax--hack {
+    color: @puget-sound;
+    background-color: @western-hemlock;
+    text-decoration: none;
+    border-bottom: @hood;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none dotted none;
+  }
 }
 
 .syntax--constant {
-  color: @orange;
+  color: @red-cedar;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @cascadian-woods;
   }
 
   &.syntax--numeric {
-    color: @orange;
+    color: @redwood;
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @cascadian-woods;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @green;
+    color: @coastal-rainforests;
   }
 }
 
-.syntax--variable {
-  color: @red;
+.syntax--variable
+{
+  color: @willamette;
 
-  &.syntax--interpolation {
-    color: darken(@red, 10%);
+  &.syntax--interpolation
+  {
+    color: @puget-sound;
   }
 
-  &.syntax--parameter.syntax--function {
-    color: @syntax-text-color;
+  &.syntax--parameter.syntax--function
+  {
+//    color: @syntax-text-color;
   }
 }
 
 .syntax--invalid.syntax--illegal {
-  background-color: @red;
-  color: @syntax-background-color;
+  background-color: @red-cedar;
+  color: @seaside;
 }
 
 .syntax--string {
-  color: @green;
+  color: @northern-pines;
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @multnomah-falls;
 
     .syntax--source.syntax--ruby.syntax--embedded {
-      color: @orange;
+      color: @douglas-fir;
     }
   }
 
   &.syntax--other.syntax--link {
-    color: @red;
+    color: @red-cedar;
   }
 }
 
 .syntax--punctuation {
   &.syntax--definition {
     &.syntax--comment {
-      color: @light-gray;
+      color: darken(@rainier,10%);
     }
 
     &.syntax--string,
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @syntax-text-color;
+      color: @bachelor;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @blue;
+      color: @columbia;
     }
 
     &.syntax--bold {
-      color: @light-orange;
+      color: @redwood;
       font-weight: bold;
     }
 
     &.syntax--italic {
-      color: @purple;
+      color: @pacific-waters;
       font-style: italic;
     }
   }
 
   &.syntax--section.syntax--embedded {
-    color: darken(@red, 10%);
+    color: darken(@red-cedar, 10%);
   }
 
 }
 
 .syntax--support {
   &.syntax--class {
-    color: @light-orange;
+    color: @red-cedar;
   }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @willamette;
 
     &.syntax--any-method {
-      color: @blue;
+      color: @columbia;
     }
   }
 }
 
 .syntax--entity {
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @columbia;
   }
   &.syntax--name.syntax--type {
-    color: @light-orange;
+    color: @red-cedar;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @green;
+    color: @cascadian-woods;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @light-orange;
+    color: @red-cedar;
   }
 
   &.syntax--name.syntax--section {
-    color: @blue;
+    color: @columbia;
   }
 
   &.syntax--name.syntax--tag {
-    color: @red;
+    color: @red-cedar;
     text-decoration: underline;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @orange;
+    color: @red-cedar;
 
     &.syntax--id {
-      color: @blue;
+      color: @puget-sound;
     }
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @light-orange;
+    color: @red-cedar;
   }
 
   &.syntax--link {
-    color: @orange;
+    color: @red-cedar;
   }
 
   &.syntax--require {
-    color: @blue;
+    color: @columbia;
   }
 
   &.syntax--selector {
-    color: @purple;
+    color: @cascade-creek;
   }
 
   &.syntax--separator {
-    background-color: @gray;
-    color: @syntax-text-color;
+    background-color: @bachelor;
+    color: @rainier;
   }
 }
 
 .syntax--none {
-  color: @syntax-text-color;
+  color: @pacific-waters;
 }
 
 .syntax--markup {
   &.syntax--bold {
-    color: @orange;
+    color: @sequoia;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @purple;
+    color: @cascade-creek;
   }
 
   &.syntax--deleted {
-    color: @red;
+    color: @red-cedar;
   }
 
   &.syntax--italic {
-    color: @purple;
+    color: @cascade-creek;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @blue;
+    color: @columbia;
   }
 
   &.syntax--inserted {
-    color: @green;
+    color: @cascadian-woods;
   }
 
   &.syntax--list {
-    color: @red;
+    color: @sequoia;
   }
 
   &.syntax--quote {
-    color: @orange;
+    color: @red-cedar;
   }
 
   &.syntax--raw.syntax--inline {
-    color: @green;
+    color: @cascadian-woods;
   }
 }
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @green;
+    color: @cascadian-woods;
   }
 }
-
 
 // Mini editor
 
