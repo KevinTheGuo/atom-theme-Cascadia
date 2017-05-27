@@ -343,15 +343,26 @@ atom-text-editor
   }
 }
 
-.syntax--source.syntax--gfm .syntax--markup {
+.syntax--source.syntax--gfm .syntax--markup
+{
   -webkit-font-smoothing: auto;
   &.syntax--heading {
     color: @cascadian-woods;
   }
 }
 
-.highlight.find-result .region {
-  color: @pacific-waters;
+.highlight.find-result .region
+{
   border-color: @pacific-waters;
-  background-color: rgba(220, 211, 188, 0.7);
+  background-color: rgb(220, 211, 188);
+  z-index: -100000;
+}
+
+.highlight.current-result .region,
+.highlight.current-result ~ .highlight.selection .region
+{
+  border-color: @pacific-waters;
+//  z-index: 1000;
+  background: @puget-shore; // to distinguish from the other results
+  z-index: -10000;
 }
