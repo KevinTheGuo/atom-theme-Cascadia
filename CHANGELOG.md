@@ -1,7 +1,7 @@
-## 0.1.0 - First Release
+## 0.3.0 - First Release
 * Complimentary huskies added
 
-## 0.3.0 - Second Release
+## 0.4.0 - Second Release
 * Added initial color combination
 * Fixed some bugs
 
