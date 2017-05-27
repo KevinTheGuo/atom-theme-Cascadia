@@ -8,5 +8,7 @@ Also comes with other nice, aesthetic features like nice, standardized highlight
 
 ![A beautiful example.](https://raw.github.com/KevinTheGuo/atom-theme-Cascadia/master/Cascadia.png)
 
-Best used with Atom Material, with rgb(0, 90, 0) as primary color, and rgb(255, 255, 225) as secondary.
+For best results use alongside Atom Material, with rgb(0, 90, 0) as primary color, and rgb(255, 255, 225) as secondary.
+
+#westcoastbestcoast
 
