@@ -14,3 +14,6 @@
 * Fixed pretty much all the bugs we could find!
 * Standardized highlighting
 * Fixed the annoying find/replace flash to get a nicer color.
+
+## 1.2.4 - Fifth Release
+* Fixed minor bugs and got readme to work
