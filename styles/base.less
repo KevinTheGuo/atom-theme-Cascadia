@@ -56,7 +56,7 @@ atom-text-editor
     color: @columbia;
   }
 
-/*  .invisible
+  .invisible
   {
     color: @syntax-text-color;
   }
@@ -64,7 +64,7 @@ atom-text-editor
   .cursor
   {
     color: @syntax-cursor-color;
-  }*/
+  }
 
   .selection .region {
     background-color: @cannon-beach;
@@ -129,7 +129,7 @@ atom-text-editor
 .syntax--storage {
   color: @willamette;
   &.syntax--todo, &.syntax--idea, &.syntax--fixme, &.syntax--hack {
-    color: @puget-sound;
+    color: @cascadian-woods;
     background-color: @western-hemlock;
     text-decoration: none;
     border-bottom: @hood;
@@ -356,4 +356,10 @@ atom-text-editor
 
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
+}
+
+
+.highlight.find-result .region {
+  border-color: #2b3f6a;
+  // background-color: rgba(224, 218, 211, 0.2);
 }
