@@ -1,10 +1,6 @@
 # Cascadia- a light Atom syntax theme
 
-A simple light theme reminiscent of the Pacific Northwest. This syntax theme showcases the greens, blues, browns, and greys of its forested coastline.
-
-
-
-Also comes with other nice, aesthetic features like nice, standardized highlighting, and a beautiful find/replace flash.
+A simple light theme reminiscent of the Pacific Northwest. This syntax theme showcases the greens, blues, browns, and greys of its forested coastline. All in a smooth, consistent, and eye-pleasing package.
 
 ![A beautiful example.](https://raw.github.com/KevinTheGuo/atom-theme-Cascadia/master/Cascadia.png)
 
