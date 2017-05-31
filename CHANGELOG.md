@@ -17,3 +17,6 @@
 
 ## 1.2.4 - Fifth Release
 * Fixed minor bugs and got readme to work
+
+## 1.2.7 - Sixth Release
+* Tweaked colors, updated readme.
